@@ -1,0 +1,21 @@
+#include <stdio.h>
+void main() 
+{
+    int gt,rt;
+    char ch;
+    printf("enter the current scale of temperature (f/c):");
+    scanf("%c",&ch);
+    printf("Enter the temperature in above mentioned scale:");
+    scanf("%d",&gt);
+    switch(ch)
+    {
+        case 'f':rt=(gt-32)*5/9;
+               printf("%d farenheat is %d celcious",gt,rt);
+               break;
+        case 'c':rt=(gt*9/5)+32;
+               printf("%d celcious is %d farenheat",gt,rt);
+               break;
+        default:
+        printf("invalid input");
+    }
+}
