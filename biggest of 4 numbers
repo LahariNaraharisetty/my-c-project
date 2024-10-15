@@ -1,0 +1,26 @@
+#include <stdio.h>
+void main()
+{
+    int a,b,c,d;
+    printf("give any four values:");
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if(a>b && a>c && a>d)
+      printf("%d is big",a);
+    else
+    {
+        if(b>c && b>d)
+          printf("%d is big",b);
+        else
+        {
+            if(c>d)
+              printf("%d is big",c);
+            else
+            {
+                if(d!=a && d!=b && d!=c)
+                  printf("%d is big",d);
+                else
+                  printf("all are equal");
+            }
+        }
+    }
+}
