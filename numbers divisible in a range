@@ -1,0 +1,15 @@
+#include<stdio.h>
+void main()
+{
+int X,Y,a,b;
+printf("Give the range of the numbers:");
+scanf("%d%d",&X,&Y);
+printf("Enter the numbers of tables:");
+scanf("%d%d",&a,&b);
+while(X<=Y)
+{
+    if(X%a==0 && X%b==0)
+      printf("%d ",X);
+    X++;
+}
+}
