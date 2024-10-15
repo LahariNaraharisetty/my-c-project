@@ -1,0 +1,16 @@
+#include<stdio.h>
+void main()
+{
+int n,i,r,a=1,be=0;
+printf("enter the decimal number:");
+scanf("%d",&n);
+i=n;
+while(i>0)
+  {
+  r=i%2;
+  be=r*a+be;
+  a=a*10;
+  i=i/2;
+  }
+printf("The binary equivalent:%d",be);
+}
