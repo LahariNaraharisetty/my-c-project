@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main() 
+{
+    int n,a,i;
+    printf("Enter any number with atleast 2 digits:");
+    scanf("%d",&n);
+    i=n;
+    for(a=0;i>0;i=i/10)
+    {
+        a=(a*10)+(i%10);
+    }
+    if(a==n)
+        printf("the given number is a palindrome");
+    else
+        printf("the given number is not a palindrome");
+}
